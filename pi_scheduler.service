@@ -1,0 +1,14 @@
+[Unit]
+Description=Crontab-WebUI für PI-Zeitsteuerung
+After=network.target
+
+[Service]
+User=seiko
+ExecStart=/path/to/pi_scheduler/crontab-ui.sh
+Type=notify
+Restart=always
+
+
+[Install]
+WantedBy=default.target
+RequiredBy=network.target

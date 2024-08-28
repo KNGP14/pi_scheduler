@@ -1,0 +1,4 @@
+*.db
+logs/
+crontab-backup
+nodesource_setup.sh
